@@ -312,6 +312,10 @@ section {
    transition: 0.2s ease;
 }
 
+.product:visited {
+   color: #000;
+}
+
 .product:hover {
    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
@@ -847,6 +851,118 @@ footer {
    margin-bottom: 3rem;
 }
 
+.blog-hero {
+   background: url('images/banner-12.webp') no-repeat center center/cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 40vh;
+   gap: .5rem;
+}
+
+.blog-hero-subheading {
+   font-size: 2.875rem;
+   color: #fff;
+}
+
+.blog-hero-text {
+   font-size: 1rem;
+   color: #fff;
+}
+
+.blogs {
+   padding: 3rem 4rem;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+.blog {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 3rem;
+}
+
+.blog-column {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem
+}
+
+.blog-column img {
+   display: flex;
+   height: 300px;
+   width: 100%;
+   object-fit: cover;
+}
+
+.blog-name {
+   font-size: 1.25rem;
+   font-weight: 700;
+   color: #1a1a1a;
+}
+
+.blog-summary {
+   line-height: 1.7;
+   font-size: 1rem;
+}
+
+.blog-link {
+   color: var(--primary-color);
+   font-size: .875rem;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+.about-hero {
+   background: url('images/banner-12.webp') no-repeat center center/cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 40vh;
+   gap: .5rem;
+}
+
+.about-hero-subheading {
+   font-size: 2.875rem;
+   color: #fff;
+}
+
+.about-hero-text {
+   font-size: 1rem;
+   color: #fff;
+}
+
+.contact-hero {
+   background: url('images/banner-11.webp') no-repeat center center/cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 40vh;
+   gap: .5rem;
+}
+
+.contact-hero-subheading {
+   font-size: 2.875rem;
+   color: #fff;
+}
+
+.contact-hero-text {
+   font-size: 1rem;
+   color: #fff;
+}
+
 @media (max-width: 700px) {
    nav {
       position: fixed;
@@ -928,7 +1044,7 @@ footer {
    .products {
       grid-template-columns: 1fr;
       padding: 0 1rem;
-      margin: 3rem auto 0;
+      margin: 3rem auto;
    }
 
    .product-brand {
@@ -1039,5 +1155,30 @@ footer {
 
    .product-info {
       max-width: 100%;
+   }
+
+   .blogs {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      gap: 1rem;
+   }
+
+   .blog {
+      gap: .75rem;
+      align-items: flex-start;
+   }
+
+   .blog-column:nth-of-type(2) {
+      flex: 2;
+      padding-top: .5rem;
+   }
+
+   .blog-column img {
+      height: 115px;
+      width: 100%;
+   }
+
+   .blog-summary {
+      display: none;
    }
 }
